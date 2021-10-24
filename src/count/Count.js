@@ -6,11 +6,11 @@ function Count () {
     const [count, setCount] = useState(0);
 
     const countHundlerPlus = () => {
-        setCount(count + 1)
+        setCount((prevCount) => prevCount + 1)
     }
 
     const countHundlerMinus = () => {
-        setCount(count - 1)
+        setCount((prevCount) => prevCount - 1)
     }
 
     return (
